@@ -1,17 +1,159 @@
+.video {
+  color: white;
+  background-color: $bg-dark;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+.video__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  text-align: center;
+}
+
+.video__description {
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.005em;
+  text-align: center;
+
+  opacity: 0.7;
+}
+
+.video__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.video__play-button {
+  width: 65px;
+  height: 65px;
+
+  font-size: 0;
+  line-height: 0;
+  background-color: transparent;
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 0;
+}
+
 @media (max-width: $tablet-width - 1px) {
   .video {
     min-height: calc(162px + 271px);
+    background-image: linear-gradient(white, white);
+    background-size: 100% 49px;
+  }
+
+  .video .wrapper {
+    padding-top: 84px;
+  }
+
+  .video__title {
+    font-size: 24px;
+  }
+
+  .video__description {
+    margin-bottom: 50px;
+    max-width: 430px;
+  }
+
+  .video__container {
+    width: 288px;
+    height: 162px;
+
+    background-image: url("../img/video-stub-mobile.jpg");
+
+    @media (min-resolution: $min-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-stub-mobile@2x.jpg");
+    }
   }
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
   .video {
     min-height: calc(282px + 216px);
+    background-image: linear-gradient(white, white);
+    background-size: 100% 85px;
+  }
+
+  .video .wrapper {
+    padding-top: 70px;
+  }
+
+  .video__title {
+    font-size: 24px;
+  }
+
+  .video__description {
+    margin: 0 auto 40px;
+    width: 430px;
+  }
+
+  .video__container {
+    width: 503px;
+    height: 282px;
+    background-image: url("../img/video-stub-tablet.jpg");
+
+    @media (min-resolution: $min-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-stub-tablet@2x.jpg");
+    }
+  }
+
+  .video__play-button {
+    width: 90px;
+    height: 90px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .video {
     min-height: calc(522px + 282px);
+    background-image: linear-gradient(white, white);
+    background-size: 100% 98px;
+  }
+
+  .video .wrapper {
+    padding-top: 120px;
+  }
+
+  .video__title {
+    font-size: 30px;
+  }
+
+  .video__description {
+    margin: 0 auto 56px;
+    width: 340px;
+  }
+
+  .video__container {
+    width: 929px;
+    height: 522px;
+    background-image: url("../img/video-stub-desktop.jpg");
+
+    @media (min-resolution: $min-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-stub-desktop@2x.jpg");
+    }
+  }
+
+  .video__play-button {
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      opacity: 0.75;
+    }
   }
 }
