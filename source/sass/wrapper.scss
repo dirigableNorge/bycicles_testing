@@ -1,0 +1,17 @@
+@media (max-width: $tablet-width - 1px) {
+  .wrapper {
+    min-width: $mobile-width;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .wrapper {
+    max-width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    max-width: $desktop-width;
+  }
+}
