@@ -17,4 +17,4 @@ deploy:
   github-token: $travis__byciclies__testing
   local_dir: build
   on:
-    branch: markup
+    branch: master
