@@ -1,11 +1,17 @@
-// @media (max-width: $tablet-width - 1px) {
+@media (max-width: $tablet-width - 1px) {
+  .page-header {
+    min-height: calc(390px + 310px + 51px);
+  }
+}
 
-// }
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .page-header {
+    min-height: calc(340px + 292px + 51px);
+  }
+}
 
-// @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
-
-// }
-
-// @media (min-width: $desktop-width) {
-
-// }
+@media (min-width: $desktop-width) {
+  .page-header {
+    min-height: calc(825px);
+  }
+}

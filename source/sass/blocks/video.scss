@@ -1,11 +1,17 @@
-// @media (max-width: $tablet-width - 1px) {
+@media (max-width: $tablet-width - 1px) {
+  .video {
+    min-height: calc(162px + 271px);
+  }
+}
 
-// }
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .video {
+    min-height: calc(282px + 216px);
+  }
+}
 
-// @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
-
-// }
-
-// @media (min-width: $desktop-width) {
-
-// }
+@media (min-width: $desktop-width) {
+  .video {
+    min-height: calc(522px + 282px);
+  }
+}

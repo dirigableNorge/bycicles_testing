@@ -1,11 +1,17 @@
-// @media (max-width: $tablet-width - 1px) {
+@media (max-width: $tablet-width - 1px) {
+  .types {
+    min-width: 1319px;
+  }
+}
 
-// }
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .types {
+    min-width: 949px;
+  }
+}
 
-// @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
-
-// }
-
-// @media (min-width: $desktop-width) {
-
-// }
+@media (min-width: $desktop-width) {
+  .types {
+    min-width: 1038px;
+  }
+}

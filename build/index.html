@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Moon</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" as="font" href="fonts/open-sans-v17-latin_cyrillic-300.woff2">
+  <link rel="preload" as="font" href="fonts/open-sans-v17-latin_cyrillic-regular.woff2">
+  <link rel="preload" as="font" href="fonts/open-sans-v17-latin_cyrillic-600.woff2">
+  <link rel="preload" as="font" href="fonts/open-sans-v17-latin_cyrillic-700.woff2">
 </head>
 <body>
   <header class="page-header">
@@ -45,63 +50,71 @@
   </header>
   <main class="page-main">
     <section class="facts">
-      <h2 class="facts__title">Несколько фактов о нас</h2>
-      <ul class="facts__list">
-        <li class="facts__item">Самый широкий выбор велосипедов!</li>
-        <li class="facts__item">Доставка велосипедов по всей России!</li>
-        <li class="facts__item">Большой выбор крутых аксессуаров!</li>
-        <li class="facts__item">Профессиональные консультации!</li>
-      </ul>
+      <div class="wrapper">
+        <h2 class="facts__title">Несколько фактов о нас</h2>
+        <ul class="facts__list">
+          <li class="facts__item">Самый широкий выбор велосипедов!</li>
+          <li class="facts__item">Доставка велосипедов по всей России!</li>
+          <li class="facts__item">Большой выбор крутых аксессуаров!</li>
+          <li class="facts__item">Профессиональные консультации!</li>
+        </ul>
+      </div>
     </section>
     <section class="types">
-      <h2 class="types__title">Виды велосипедов</h2>
-      <ul class="types__list">
-        <li class="types__item">
-          <div class="types__img-container">
-            <picture>
-              <img class="types__image" src="img/bike01-desktop.jpg" srcset="img/bike01-desktop@2x.jpg" alt="Bike.">
-            </picture>
-          </div>
-          <p class="types__name">Дорожный велосипед</p>
-        </li>
-        <li class="types__item">
-          <div class="types__img-container">
-            <picture>
-              <img class="types__image" src="img/bike02-desktop.jpg" srcset="img/bike02-desktop@2x.jpg" alt="Bike.">
-            </picture>
-          </div>
-          <p class="types__name">Горный велосипед</p>
-        </li>
-        <li class="types__item">
-          <div class="types__img-container">
-            <picture>
-              <img class="types__image" src="img/bike03-desktop.jpg" srcset="img/bike03-desktop@2x.jpg" alt="Bike.">
-            </picture>
-          </div>
-          <p class="types__name">Детский велосипед</p>
-        </li>
-      </ul>
+      <div class="wrapper">
+        <h2 class="types__title">Виды велосипедов</h2>
+        <ul class="types__list">
+          <li class="types__item">
+            <div class="types__img-container">
+              <picture>
+                <img class="types__image" src="img/bike01-desktop.jpg" srcset="img/bike01-desktop@2x.jpg" alt="Bike.">
+              </picture>
+            </div>
+            <p class="types__name">Дорожный велосипед</p>
+          </li>
+          <li class="types__item">
+            <div class="types__img-container">
+              <picture>
+                <img class="types__image" src="img/bike02-desktop.jpg" srcset="img/bike02-desktop@2x.jpg" alt="Bike.">
+              </picture>
+            </div>
+            <p class="types__name">Горный велосипед</p>
+          </li>
+          <li class="types__item">
+            <div class="types__img-container">
+              <picture>
+                <img class="types__image" src="img/bike03-desktop.jpg" srcset="img/bike03-desktop@2x.jpg" alt="Bike.">
+              </picture>
+            </div>
+            <p class="types__name">Детский велосипед</p>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="video">
-      <h2 class="video__title">Видео про велосипеды</h2>
-      <p class="video__description">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
-      <div class="video__container">
-        <button class="video__play-button" type="button">Play</button>
+      <div class="wrapper">
+        <h2 class="video__title">Видео про велосипеды</h2>
+        <p class="video__description">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+        <div class="video__container">
+          <button class="video__play-button" type="button">Play</button>
+        </div>
       </div>
     </section>
   </main>
   <footer class="page-footer">
-    <h2 class="page-footer__title">Как нас найти?</h2>
-    <p class="page-footer__address">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-    <div class="page-footer__map"></div>
-    <ul class="page-footer__contacts">
-      <li class="page-footer__contacts-item">
-        <a href="" class="page-footer__contacts-link">puteshestviemechta@gmail.ru</a>
-      </li>
-      <li class="page-footer__contacts-item">
-        <a href="" class="page-footer__contacts-link">+7 (499) -784-684-46</a>
-      </li>
-    </ul>
+    <div class="wrapper">
+      <h2 class="page-footer__title">Как нас найти?</h2>
+      <p class="page-footer__address">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+      <div class="page-footer__map"></div>
+      <ul class="page-footer__contacts">
+        <li class="page-footer__contacts-item">
+          <a href="" class="page-footer__contacts-link">puteshestviemechta@gmail.ru</a>
+        </li>
+        <li class="page-footer__contacts-item">
+          <a href="" class="page-footer__contacts-link">+7 (499) -784-684-46</a>
+        </li>
+      </ul>
+    </div>
   </footer>
 </body>
 </html>

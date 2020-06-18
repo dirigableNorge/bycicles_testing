@@ -1,11 +1,17 @@
-// @media (max-width: $tablet-width - 1px) {
+@media (max-width: $tablet-width - 1px) {
+  .page-footer {
+    min-width: 619px;
+  }
+}
 
-// }
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .page-footer {
+    min-width: 813px;
+  }
+}
 
-// @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
-
-// }
-
-// @media (min-width: $desktop-width) {
-
-// }
+@media (min-width: $desktop-width) {
+  .page-footer {
+    min-width: 1002px;
+  }
+}
