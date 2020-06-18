@@ -1,17 +1,17 @@
 @media (max-width: $tablet-width - 1px) {
   .facts {
-    min-width: 837px;
+    min-height: 837px;
   }
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
   .facts {
-    min-width: 496px;
+    min-height: 496px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .facts {
-    min-width: 503px;
+    min-height: 503px;
   }
 }

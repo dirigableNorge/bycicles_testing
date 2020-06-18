@@ -1,17 +1,218 @@
+.page-footer__map-frame {
+  width: 100%;
+  height: 100%;
+}
+
+.page-footer__contacts-link {
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(black, 0.5);
+}
+
+.page-footer__contacts-link--email {
+  padding-left: 35px;
+  background-image: url("../img/icon-envelope.svg");
+  background-repeat: no-repeat;
+  background-size: 26px 20px;
+  background-position: 0 2px;
+}
+
+.page-footer__contacts-link--phone {
+  padding-left: 35px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-size: 26px 20px;
+  background-position: 0 2px;
+}
+
 @media (max-width: $tablet-width - 1px) {
   .page-footer {
-    min-width: 619px;
+    min-height: 619px;
+  }
+
+  .page-footer .wrapper {
+    padding-top: 70px;
+    padding-bottom: 38px;
+  }
+
+  .page-footer__title {
+    margin-bottom: 20px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.005em;
+    text-align: center;
+    color: $main-dark;
+  }
+
+  .page-footer__address {
+    margin: 0;
+    margin-bottom: 25px;
+
+    font-size: 17px;
+    line-height: 31px;
+    text-align: center;
+  }
+
+  .page-footer__map {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 33px;
+
+    background-image: url("../img/map-mobile-stub.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+
+    @media (min-resolution: $min-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/map-mobile-stub@2x.jpg");
+    }
+  }
+
+  .page-footer__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .page-footer__contacts-item {
+    &:not(:last-child) {
+      margin-bottom: 22px;
+    }
   }
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
   .page-footer {
-    min-width: 813px;
+    min-height: 813px;
+  }
+
+  .page-footer .wrapper {
+    padding-top: 70px;
+    padding-bottom: 54 px;
+  }
+
+  .page-footer__title {
+    margin-bottom: 20px;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.005em;
+    text-align: center;
+    color: $main-dark;
+  }
+
+  .page-footer__address {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 17px;
+    line-height: 31px;
+    text-align: center;
+  }
+
+  .page-footer__map {
+    width: 698;
+    height: 545px;
+    margin-bottom: 20px;
+
+    background-image: url("../img/map-tablet-stub.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+
+    @media (min-resolution: $min-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/map-tablet-stub@2x.jpg");
+    }
+  }
+
+  .page-footer__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .page-footer__contacts-item {
+    &:not(:last-child) {
+      margin-right: 90px;
+      margin-bottom: 22px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    min-width: 1002px;
+    min-height: 1002px;
+  }
+
+  .page-footer .wrapper {
+    padding-top: 151px;
+    padding-bottom: 98px;
+  }
+
+  .page-footer__title {
+    margin-bottom: 30px;
+
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.005em;
+    text-align: center;
+    color: $main-dark;
+  }
+
+  .page-footer__address {
+    max-width: 555px;
+    margin: 0 auto 41px;
+
+    font-size: 17px;
+    line-height: 31px;
+    text-align: center;
+  }
+
+  .page-footer__map {
+    width: 957px;
+    height: 530px;
+    margin-bottom: 41px;
+
+    background-image: url("../img/map-desktop-stub.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+
+    @media (min-resolution: $min-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/map-desktop-stub@2x.jpg");
+    }
+  }
+
+  .page-footer__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .page-footer__contacts-item {
+    &:not(:last-child) {
+      margin-right: 90px;
+      margin-bottom: 22px;
+    }
+  }
+
+  .page-footer__contacts-link {
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
   }
 }
