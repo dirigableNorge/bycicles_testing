@@ -13,8 +13,14 @@
 <body>
   <header class="page-header">
     <div class="wrapper">
-      <a href="/" class="page-header__logo"></a>
-      <nav class="page-header__nav nav">
+      <a href="/" class="page-header__logo">
+        <picture>
+          <source type="image/webp" srcset="img/moon-logo.webp 1x, img/moon-logo@2x.webp 2x">
+          <img class="page-header__logo-image" src="moon-logo.png" srcset="moon-logo@2x.png 2x" width="68" height="20" alt="Logo image.">
+        </picture>
+      </a>
+      <nav class="page-header__nav nav nav--close" id="mainNavigation">
+        <button class="nav__toggle-button" type="button">Toggle button</button>
         <ul class="nav__list">
           <li class="nav__item">
             <a href="#facts" class="nav__link">О нас</a>
