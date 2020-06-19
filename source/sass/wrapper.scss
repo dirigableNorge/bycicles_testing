@@ -5,17 +5,23 @@
 @media (max-width: $tablet-width - 1px) {
   .wrapper {
     min-width: $mobile-width;
+    padding-right: $mobile-padding;
+    padding-left: $mobile-padding;
   }
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
   .wrapper {
     max-width: $tablet-width;
+    padding-right: $tablet-padding;
+    padding-left: $tablet-padding;
   }
 }
 
 @media (min-width: $desktop-width) {
   .wrapper {
-    max-width: $desktop-width;
+    max-width: $desktop-max-width;
+    padding-right: $desktop-padding;
+    padding-left: $desktop-padding;
   }
 }

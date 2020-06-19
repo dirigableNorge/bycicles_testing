@@ -33,6 +33,8 @@
   .page-footer .wrapper {
     padding-top: 70px;
     padding-bottom: 38px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .page-footer__title {
@@ -47,8 +49,8 @@
   }
 
   .page-footer__address {
-    margin: 0;
-    margin-bottom: 25px;
+    max-width: 288px;
+    margin: 0 auto 25px;
 
     font-size: 17px;
     line-height: 31px;
@@ -56,14 +58,15 @@
   }
 
   .page-footer__map {
+    position: relative;
     width: 100%;
     height: 250px;
     margin-bottom: 33px;
 
     background-image: url("../img/map-mobile-stub.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
+    background-size: contain;
+    background-position: center;
 
     @media (min-resolution: $min-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/map-mobile-stub@2x.jpg");
