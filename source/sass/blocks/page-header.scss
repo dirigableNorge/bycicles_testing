@@ -54,8 +54,6 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    min-height: calc(825px);
-
     background-image: url("../img/head-background-desktop.jpg");
     background-size: cover;
 
@@ -66,15 +64,17 @@
 
   .page-header .wrapper {
     position: relative;
+    padding-right: calc(9% + 149px);
+    padding-left: calc(9% + 149px);
   }
 
   .page-header__logo {
     position: absolute;
     top: 318px;
-    left: 0;
+    left: calc(9% + 149px);
   }
 
   .page-header__nav {
-    margin-bottom: 307px;
+    margin-bottom: 260px;
   }
 }

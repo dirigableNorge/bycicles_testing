@@ -138,11 +138,19 @@
 }
 
 @media (min-width: $desktop-width) {
+  .intro {
+    padding-bottom: 120px;
+  }
+
+  .intro__column {
+    padding-bottom: 120px;
+  }
+
   .intro__column:nth-child(1) {
     align-self: flex-start;
 
     width: 393px;
-    margin-right: 160px;
+    margin-right: auto;
     padding-top: 47px;
   }
 
@@ -152,6 +160,9 @@
 
   .intro__title {
     margin-bottom: 24px;
+
+    font-size: 46px;
+    line-height: 64px;
     text-align: left;
   }
 

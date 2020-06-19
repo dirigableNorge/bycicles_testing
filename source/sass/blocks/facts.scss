@@ -98,7 +98,7 @@
   }
 
   .facts__list {
-    justify-content: space-between;
+    justify-content: center;
     padding-right: 9px;
     padding-left: 9px;
   }
@@ -106,5 +106,10 @@
   .facts__item {
     margin-bottom: 40px;
     padding-top: 54px;
+
+    &:not(:last-child) {
+
+      margin-right: auto;
+    }
   }
 }
