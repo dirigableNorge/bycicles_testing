@@ -1,17 +1,39 @@
+.page-header {
+  background-repeat: no-repeat;
+}
+
 @media (max-width: $tablet-width - 1px) {
   .page-header {
     min-height: calc(390px + 310px + 51px);
+
+    background-image: url("../img/head-background-mobile.jpg");
+
+    @media (min-resolution: $min-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/head-background-mobile@2x.jpg");
+    }
   }
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
   .page-header {
     min-height: calc(340px + 292px + 51px);
+
+    background-image: url("../img/head-background-tablet.jpg");
+
+    @media (min-resolution: $min-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/head-background-tablet@2x.jpg");
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
     min-height: calc(825px);
+
+    background-image: url("../img/head-background-desktop.jpg");
+
+    @media (min-resolution: $min-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/head-background-desktop@2x.jpg");
+    }
   }
 }

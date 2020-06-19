@@ -231,16 +231,16 @@
         }
 
         &::after {
-            content: "";
-            position: absolute;
-            bottom: -23px;
-            right: -23px;
-            z-index: 7;
+          content: "";
+          position: absolute;
+          bottom: -23px;
+          right: -23px;
+          z-index: 7;
 
-            width: 47px;
-            height: 47px;
-            background-image: url("../img/decor02.svg");
-            background-size: cover;
+          width: 47px;
+          height: 47px;
+          background-image: url("../img/decor02.svg");
+          background-size: cover;
         }
       }
     }
