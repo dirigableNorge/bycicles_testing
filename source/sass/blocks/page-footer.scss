@@ -38,6 +38,7 @@
   }
 
   .page-footer__title {
+    margin: 0;
     margin-bottom: 20px;
 
     font-weight: 600;
@@ -100,6 +101,7 @@
   }
 
   .page-footer__title {
+    margin: 0;
     margin-bottom: 20px;
 
     font-weight: 600;
@@ -123,6 +125,10 @@
     width: 698px;
     height: 545px;
     margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 4px;
+    padding-left: 4px;
 
     background-image: url("../img/map-tablet-stub.jpg");
     background-repeat: no-repeat;

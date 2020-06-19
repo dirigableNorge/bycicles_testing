@@ -67,7 +67,7 @@
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
   .facts .wrapper {
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
   }
 
   .facts__title {
@@ -79,6 +79,7 @@
   }
 
   .facts__item {
+    padding-top: 55px;
     margin-bottom: 40px;
     margin-left: 20px;
   }
