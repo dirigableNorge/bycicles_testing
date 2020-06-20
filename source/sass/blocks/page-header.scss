@@ -9,29 +9,22 @@
 }
 
 @media (max-width: $tablet-width - 1px) {
-  .page-header {
-    background-image: url("../img/head-background-mobile.jpg");
-    background-position: top center;
-    background-size: auto 390px;
-
-    @media (min-resolution: $min-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/head-background-mobile@2x.jpg");
-    }
-  }
-
   .page-header .wrapper {
     position: relative;
-    padding-top: 25px;
+    padding: 0;
   }
 
   .page-header__logo {
-    margin-bottom: 75px;
+    position: absolute;
+    top: 25px;
+    left: 16px;
+    
   }
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
   .page-header {
-    background-image: url("../img/head-background-tablet.jpg");
+    background-image: url("../img/head-background-tablet.jpg"), linear-gradient($main-dark, $main-dark);
     background-position: top center;
     background-size: 100% 340px;
 
@@ -67,6 +60,8 @@
     position: relative;
     padding-right: calc(9% + 149px);
     padding-left: calc(9% + 149px);
+
+    box-sizing: border-box;
   }
 
   .page-header__logo {
