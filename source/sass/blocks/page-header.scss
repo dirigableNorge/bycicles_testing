@@ -18,30 +18,20 @@
     position: absolute;
     top: 25px;
     left: 16px;
-    
+
   }
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
-  .page-header {
-    background-image: url("../img/head-background-tablet.jpg"), linear-gradient($main-dark, $main-dark);
-    background-position: top center;
-    background-size: 100% 340px;
-
-    @media (min-resolution: $min-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/head-background-tablet@2x.jpg");
-    }
-  }
-
   .page-header .wrapper {
     position: relative;
-    padding-top: 25px;
-    padding-left: 21px;
-    padding-right: 21px;
+    padding: 0;
   }
 
   .page-header__logo {
-    margin-bottom: 92px;
+    position: absolute;
+    top: 25px;
+    left: 21px;
   }
 }
 
