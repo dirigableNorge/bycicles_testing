@@ -30,7 +30,7 @@
     width: 100%;
   }
 
-  .nav--open {
+  .nav--opened {
     height: 100vh;
     padding-top: 100px;
 
@@ -43,7 +43,7 @@
     }
   }
 
-  .nav--close {
+  .nav--closed {
     .nav__list {
       display: none;
     }
@@ -105,7 +105,7 @@
     width: 100%;
   }
 
-  .nav--open {
+  .nav--opened {
     height: 100vh;
     padding-top: 100px;
 
@@ -118,7 +118,7 @@
     }
   }
 
-  .nav--close {
+  .nav--closed {
     .nav__list {
       display: none;
     }

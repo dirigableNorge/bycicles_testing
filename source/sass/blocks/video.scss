@@ -50,6 +50,15 @@
   border: 0;
 }
 
+.video__frame {
+  width: 100%;
+  height: 100%;
+}
+
+.video__frame--hide {
+  display: none;
+}
+
 @media (max-width: $tablet-width - 1px) {
   .video {
     min-height: calc(162px + 271px);
