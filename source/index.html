@@ -21,7 +21,7 @@
         </picture>
       </a>
       <nav class="page-header__nav nav nav--noscript" id="mainNavigation">
-        <button class="nav__toggle-button" type="button">Открыть/закрыть меню</button>
+        <button class="nav__toggle-button" type="button" aria-label="Открыть или закрыть меню">Открыть/закрыть меню</button>
         <ul class="nav__list">
           <li class="nav__item">
             <a href="#facts" class="nav__link">О нас</a>
@@ -45,11 +45,11 @@
         <div class="intro__column">
           <form class="intro__form">
             <h3 class="intro__form-title">Заполните поля ниже и мы подберем велосипед Вашей мечты</h3>
-            <input class="intro__input" type="text" name="name" id="subscribeName" placeholder="Введите Ваше Имя" required>
+            <input class="intro__input" type="text" name="name" id="subscribeName" placeholder="Введите Ваше Имя" aria-label="Поле для ввода имени" required>
             <label class="intro__label" for="subscribeName">Имя</label>
-            <input class="intro__input" type="tel" name="phone" id="subscribePhone" placeholder="Введите Ваш номер телефона" pattern="[0-9]{10}" required>
+            <input class="intro__input" type="tel" name="phone" id="subscribePhone" placeholder="Введите Ваш номер телефона" pattern="[0-9]{10}" aria-label="Поле для ввода номера телефона" required>
             <label class="intro__label" for="subscribePhone">Телефон</label>
-            <button class="intro__submit-button" type="submit">Подобрать велосипед мечты</button>
+            <button class="intro__submit-button" type="submit" aria-label="Отправить форму обратной связи">Подобрать велосипед мечты</button>
           </from>
         </div>
       </div>

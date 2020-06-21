@@ -38,6 +38,13 @@ html {
 
 body {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -900,6 +907,9 @@ input[type="radio"].visually-hidden {
     cursor: pointer; }
     .video__play-button:hover, .video__play-button:focus {
       opacity: 0.75; } }
+
+.page-footer {
+  margin-top: auto; }
 
 .page-footer__map-frame {
   width: 100%;
