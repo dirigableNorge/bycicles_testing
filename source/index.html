@@ -13,10 +13,11 @@
 <body>
   <header class="page-header">
     <div class="wrapper">
-      <a href="/" class="page-header__logo">
+      <a class="page-header__logo">
         <picture>
           <source type="image/webp" srcset="img/moon-logo.webp 1x, img/moon-logo@2x.webp 2x">
-          <img class="page-header__logo-image" src="moon-logo.png" srcset="moon-logo@2x.png 2x" width="68" height="20" alt="Logo image.">
+            <!-- 1x: 68px; 2x: 136px -->
+          <img class="page-header__logo-image" src="img/moon-logo.png" srcset="img/moon-logo.png 1x, img/moon-logo@2x.png 2x" width="68" height="20" alt="Logo image.">
         </picture>
       </a>
       <nav class="page-header__nav nav nav--noscript" id="mainNavigation">
@@ -44,9 +45,9 @@
         <div class="intro__column">
           <div class="intro__form">
             <h3 class="intro__form-title">Заполните поля ниже и мы подберем велосипед Вашей мечты</h3>
-            <input class="intro__input" type="text" name="name" id="subscribeName" placeholder="Введите Ваше Имя">
+            <input class="intro__input" type="text" name="name" id="subscribeName" placeholder="Введите Ваше Имя" required>
             <label class="intro__label" for="subscribeName">Имя</label>
-            <input class="intro__input" type="tel" name="phone" id="subscribePhone" placeholder="Введите Ваш номер телефона">
+            <input class="intro__input" type="tel" name="phone" id="subscribePhone" placeholder="Введите Ваш номер телефона" pattern="[0-9]{10}" required>
             <label class="intro__label" for="subscribePhone">Телефон</label>
             <button class="intro__submit-button" type="submit">Подобрать велосипед мечты</button>
           </div>
@@ -77,6 +78,7 @@
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/bike01-tablet-mobile.webp 1x, img/bike01-tablet-mobile@2x.webp 2x">
                 <source type="image/webp" srcset="img/bike01-desktop.webp 1x, img/bike01-desktop@2x.webp 2x">
                 <source media="(max-width: 1023px)" srcset="img/bike01-tablet-mobile.jpg 1x, img/bike01-tablet-mobile@2x.jpg 2x">
+                <!-- 1x: 342px; 2x: 684px -->
                 <img class="types__image" src="img/bike01-desktop.jpg" srcset="img/bike01-desktop@2x.jpg 2x" width="342" height="503" alt="Bike.">
               </picture>
             </div>
@@ -88,6 +90,7 @@
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/bike02-tablet-mobile.webp 1x, img/bike02-tablet-mobile@2x.webp 2x">
                 <source type="image/webp" srcset="img/bike02-desktop.webp 1x, img/bike02-desktop@2x.webp 2x">
                 <source media="(max-width: 1023px)" srcset="img/bike02-tablet-mobile.jpg 1x, img/bike02-tablet-mobile@2x.jpg 2x">
+                <!-- 1x: 342px; 2x: 684px -->
                 <img class="types__image" src="img/bike02-desktop.jpg" srcset="img/bike02-desktop@2x.jpg 2x" width="342" height="566" alt="Bike.">
               </picture>
             </div>
@@ -99,6 +102,7 @@
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/bike03-tablet-mobile.webp 1x, img/bike03-tablet-mobile@2x.webp 2x">
                 <source type="image/webp" srcset="img/bike03-desktop.webp 1x, img/bike03-desktop@2x.webp 2x">
                 <source media="(max-width: 1023px)" srcset="img/bike03-tablet-mobile.jpg 1x, img/bike03-tablet-mobile@2x.jpg 2x">
+                <!-- 1x: 342px; 2x: 684px -->
                 <img class="types__image" src="img/bike03-desktop.jpg" srcset="img/bike03-desktop@2x.jpg 2x" width="342" height="513" alt="Bike.">
               </picture>
             </div>
