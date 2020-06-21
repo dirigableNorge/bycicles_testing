@@ -19,8 +19,8 @@
           <img class="page-header__logo-image" src="moon-logo.png" srcset="moon-logo@2x.png 2x" width="68" height="20" alt="Logo image.">
         </picture>
       </a>
-      <nav class="page-header__nav nav nav--close" id="mainNavigation">
-        <button class="nav__toggle-button" type="button">Toggle button</button>
+      <nav class="page-header__nav nav nav--noscript" id="mainNavigation">
+        <button class="nav__toggle-button" type="button">Открыть/закрыть меню</button>
         <ul class="nav__list">
           <li class="nav__item">
             <a href="#facts" class="nav__link">О нас</a>
@@ -47,7 +47,7 @@
             <input class="intro__input" type="text" name="name" id="subscribeName" placeholder="Введите Ваше Имя">
             <label class="intro__label" for="subscribeName">Имя</label>
             <input class="intro__input" type="tel" name="phone" id="subscribePhone" placeholder="Введите Ваш номер телефона">
-            <label class="intro__label" for="subscribeName">Телефон</label>
+            <label class="intro__label" for="subscribePhone">Телефон</label>
             <button class="intro__submit-button" type="submit">Подобрать велосипед мечты</button>
           </div>
         </div>
@@ -55,6 +55,7 @@
     </div>
   </header>
   <main class="page-main">
+    <h1 class="visually-hidden">Велисипеды Moon</h1>
     <section class="facts" id="facts">
       <div class="wrapper">
         <h2 class="facts__title">Несколько фактов о нас</h2>
@@ -111,7 +112,8 @@
         <h2 class="video__title">Видео про велосипеды</h2>
         <p class="video__description">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
         <div class="video__container">
-          <button class="video__play-button" type="button">Play</button>
+          <button class="video__play-button" type="button">Воспроизвести</button>
+          <iframe class="video__frame video__frame--hide" width="929" height="522" src="https://www.youtube.com/embed/NhbwNgOxLOI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
         </div>
       </div>
     </section>
@@ -133,5 +135,6 @@
       </ul>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
