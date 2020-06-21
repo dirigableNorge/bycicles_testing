@@ -102,9 +102,10 @@
     padding-left: $mobile-padding;
     padding-bottom: 70px;
 
+    background-color: $main-dark;
     background-image: url("../img/head-background-mobile.jpg");
     background-position: top center;
-    background-size: auto 390px;
+    background-size: cover;
 
     @media (min-resolution: $min-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/head-background-mobile@2x.jpg");
@@ -129,18 +130,21 @@
   }
 
   .intro__title {
+    width: 100%;
     margin-bottom: 18px;
   }
 
   .intro__column:nth-child(1) {
     justify-content: center;
+    width: 100%;
     padding-top: 134px;
     padding-right: 21px;
     padding-left: 21px;
     padding-bottom: 80px;
 
-    background-image: url("../img/head-background-tablet.jpg"), linear-gradient($main-dark, $main-dark);
-    background-position: center;
+    background-color: $main-dark;
+    background-image: url("../img/head-background-tablet.jpg");
+    background-position: top center;
     background-size: cover;
 
     @media (min-resolution: $min-dpi), (min-resolution: $retina-dppx) {
@@ -199,5 +203,25 @@
     margin-bottom: 20px;
     font-size: 17px;
     color: white;
+  }
+
+  .intro__input {
+    &:hover,
+    &:focus {
+      border-color: black;
+
+      &::placeholder {
+        color: black;
+      }
+    }
+  }
+
+  .intro__submit-button {
+    &:hover,
+    &:focus {
+      background-color: rgba($birusa, 0.9);
+    }
+
+    cursor: pointer;
   }
 }

@@ -26,6 +26,8 @@
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
   .page-header .wrapper {
     position: relative;
+
+    max-width: 100%;
     padding: 0;
   }
 
@@ -38,6 +40,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
+    background-color: $main-dark;
     background-image: url("../img/head-background-desktop.jpg");
     background-size: cover;
     background-position: center;
