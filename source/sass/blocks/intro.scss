@@ -204,4 +204,24 @@
     font-size: 17px;
     color: white;
   }
+
+  .intro__input {
+    &:hover,
+    &:focus {
+      border-color: black;
+
+      &::placeholder {
+        color: black;
+      }
+    }
+  }
+
+  .intro__submit-button {
+    &:hover,
+    &:focus {
+      background-color: rgba($birusa, 0.9);
+    }
+
+    cursor: pointer;
+  }
 }
