@@ -96,7 +96,7 @@
     margin-bottom: 20px;
   }
 
-  .intro__column:nth-child(1) {
+  .intro__column {
     padding-top: 120px;
     padding-right: $mobile-padding;
     padding-left: $mobile-padding;
@@ -134,7 +134,7 @@
     margin-bottom: 18px;
   }
 
-  .intro__column:nth-child(1) {
+  .intro__column {
     justify-content: center;
     width: 100%;
     padding-top: 134px;
@@ -172,15 +172,12 @@
   }
 
   .intro__column {
-    padding-bottom: 120px;
-  }
-
-  .intro__column:nth-child(1) {
     align-self: flex-start;
 
     width: 393px;
     margin-right: auto;
     padding-top: 47px;
+    padding-bottom: 120px;
   }
 
   .intro__form {
