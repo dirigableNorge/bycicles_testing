@@ -189,12 +189,19 @@
 
   .nav__list {
     justify-content: space-between;
-    padding-right: 19px;
-    padding-left: 19px;
+
+    padding-left: 9px;
+    padding-right: 9px;
   }
 
   .nav__item {
     margin-bottom: 9px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &:not(:last-child) {
+      padding-right: auto;
+    }
   }
 
   .nav__link {
