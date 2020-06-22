@@ -848,7 +848,6 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 767px) {
   .video {
-    min-height: calc(162px + 271px);
     background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
     background-image: linear-gradient(white, white);
     background-size: 100% 49px; }
@@ -857,9 +856,9 @@ input[type="radio"].visually-hidden {
   .video__title {
     font-size: 24px; }
   .video__description {
+    max-width: 430px;
     margin: 0 auto;
-    margin-bottom: 50px;
-    max-width: 430px; }
+    margin-bottom: 50px; }
   .video__container {
     width: 288px;
     height: 162px;
