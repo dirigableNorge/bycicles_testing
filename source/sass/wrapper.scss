@@ -2,11 +2,11 @@
   margin: 0 auto;
 }
 
-@media (max-width: $tablet-width - 1px) {
+@media (min-width: $desktop-width) {
   .wrapper {
-    min-width: $mobile-width;
-    padding-right: $mobile-padding;
-    padding-left: $mobile-padding;
+    max-width: $desktop-max-width;
+    padding-right: $desktop-padding;
+    padding-left: $desktop-padding;
   }
 }
 
@@ -18,10 +18,11 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (max-width: $tablet-width - 1px) {
   .wrapper {
-    max-width: $desktop-max-width;
-    padding-right: $desktop-padding;
-    padding-left: $desktop-padding;
+    min-width: $mobile-width;
+    padding-right: $mobile-padding;
+    padding-left: $mobile-padding;
   }
 }
+

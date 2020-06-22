@@ -12,6 +12,9 @@
   <link  rel="preload" as="font" href="fonts/open-sans-v17-latin_cyrillic-700.woff2">
 </head>
 <body>
+  <div style="display: none;">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
   <header class="page-header">
     <div class="wrapper">
       <a class="page-header__logo">
@@ -22,19 +25,47 @@
         </picture>
       </a>
       <nav class="page-header__nav nav nav--noscript" id="mainNavigation">
-        <button class="nav__toggle-button" type="button" aria-label="Открыть или закрыть меню">Открыть/закрыть меню</button>
+        <button class="nav__toggle-button" type="button" aria-label="Открыть или закрыть меню">
+          Открыть/закрыть меню
+          <svg class="nav__icon-close" viewBox="0 0 24 25" width="24" height="25">
+            <use xlink:href="#icon-close"></use>
+          </svg>
+          <svg class="nav__icon-burger" viewBox="0 0 24 14" width="24" height="14">
+            <use xlink:href="#icon-burger"></use>
+          </svg>
+        </button>
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#facts" class="nav__link">О нас</a>
+            <a href="#facts" class="nav__link">
+              О нас
+              <svg class="nav__icon-small-arrow" viewBox="0 0 8 12" width="8" height="12">
+                <use xlink:href="#icon-small-arrow"></use>
+              </svg>
+            </a>
           </li>
           <li class="nav__item">
-            <a href="#types" class="nav__link">Виды велосипедов</a>
+            <a href="#types" class="nav__link">
+              Виды велосипедов
+              <svg class="nav__icon-small-arrow" viewBox="0 0 8 12" width="8" height="12">
+                <use xlink:href="#icon-small-arrow"></use>
+              </svg>
+            </a>
           </li>
           <li class="nav__item">
-            <a href="#video" class="nav__link">Видео про велосипеды </a>
+            <a href="#video" class="nav__link">
+              Видео про велосипеды
+              <svg class="nav__icon-small-arrow" viewBox="0 0 8 12" width="8" height="12">
+                <use xlink:href="#icon-small-arrow"></use>
+              </svg>
+            </a>
           </li>
           <li class="nav__item">
-            <a href="#page-footer" class="nav__link">Контакты</a>
+            <a href="#page-footer" class="nav__link">
+              Контакты
+              <svg class="nav__icon-small-arrow" viewBox="0 0 8 12" width="8" height="12">
+                <use xlink:href="#icon-small-arrow"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </nav>
@@ -50,7 +81,6 @@
             <label for="subscribeName">Имя</label>
             <input type="tel" name="phone" id="subscribePhone" placeholder="Введите Ваш номер телефона" pattern="[0-9]{10}" aria-label="Поле для ввода номера телефона" required>
             <label for="subscribePhone">Телефон</label>
-
             <button type="submit" aria-label="Отправить форму обратной связи">Подобрать велосипед мечты</button>
           </from>
         </div>
@@ -117,7 +147,12 @@
         <h2 class="video__title">Видео про велосипеды</h2>
         <p class="video__description">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
         <div class="video__container">
-          <button class="video__play-button" type="button">Воспроизвести</button>
+          <button class="video__play-button" type="button">
+            Воспроизвести
+            <svg class="video__icon-play" viewBox="0 0 65 65" width="65" hegiht="65">
+              <use xlink:href="#icon-play"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </section>
@@ -131,10 +166,20 @@
       </div>
       <ul class="page-footer__contacts">
         <li class="page-footer__contacts-item">
-          <a class="page-footer__contacts-link page-footer__contacts-link--email" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+          <a class="page-footer__contacts-link page-footer__contacts-link--email" href="mailto:puteshestviemechta@gmail.ru">
+            puteshestviemechta@gmail.ru
+            <svg class="page-footer__icon-envelope" viewBox="0 0 26 20" width="26" height="20">
+              <use xlink:href="#icon-envelope"></use>
+            </svg>
+          </a>
         </li>
         <li class="page-footer__contacts-item">
-          <a class="page-footer__contacts-link page-footer__contacts-link--phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
+          <a class="page-footer__contacts-link page-footer__contacts-link--phone" href="tel:+749978468446">
+            +7 (499) -784-684-46
+            <svg class="page-footer__icon-phone" viewBox="0 0 17 24" width="17" height="24">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+          </a>
         </li>
       </ul>
     </div>

@@ -40,6 +40,9 @@
 }
 
 .video__play-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 65px;
   height: 65px;
 
@@ -47,10 +50,6 @@
   line-height: 0;
 
   background-color: transparent;
-  background-image: url("../img/icon-play.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   border: 0;
 }
 
@@ -127,6 +126,11 @@
   }
 
   .video__play-button {
+    width: 90px;
+    height: 90px;
+  }
+
+  .video__icon-play {
     width: 90px;
     height: 90px;
   }
