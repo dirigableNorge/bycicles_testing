@@ -121,6 +121,10 @@
     height: 300px;
   }
 
+  .types__list {
+    margin-bottom: 20px;
+  }
+
   .types__item {
     margin-bottom: 50px;
     margin-left: 25px;
@@ -167,7 +171,9 @@
 @media (min-width: $desktop-width) {
   .types .wrapper {
     padding-top: 150px;
+    padding-right: 0;
     padding-bottom: 97px;
+    padding-left: 0;
 
     box-sizing: content-box;
   }

@@ -136,7 +136,7 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1024px) {
   .page-header .wrapper {
     position: relative;
-    width: 60%;
+    width: calc(60% + 18px);
     padding-right: 0;
     padding-left: 0;
     -webkit-box-sizing: border-box;
@@ -275,6 +275,8 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1024px) {
   .nav {
     padding-top: 21px;
+    padding-right: 3px;
+    padding-left: 3px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
   .nav__toggle-button {
     display: none; }
@@ -491,6 +493,8 @@ input[type="radio"].visually-hidden {
     line-height: 64px;
     text-align: left; }
   .intro__description {
+    max-width: 381px;
+    font-size: 20px;
     text-align: left; }
   .intro__form h3 {
     margin-bottom: 20px;
@@ -691,6 +695,8 @@ input[type="radio"].visually-hidden {
   .types__image {
     width: 270px;
     height: 300px; }
+  .types__list {
+    margin-bottom: 20px; }
   .types__item {
     margin-bottom: 50px;
     margin-left: 25px;
@@ -719,7 +725,9 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1024px) {
   .types .wrapper {
     padding-top: 150px;
+    padding-right: 0;
     padding-bottom: 97px;
+    padding-left: 0;
     -webkit-box-sizing: content-box;
             box-sizing: content-box; }
   .types__title {
