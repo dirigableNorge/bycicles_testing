@@ -30,13 +30,13 @@
   color: rgba(white, 0.8);
 }
 
-.intro__form {
+.intro__form form {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
 
-.intro__form-title {
+.intro__form h3 {
   margin: 0;
 
   font-weight: 600;
@@ -47,7 +47,7 @@
   color: black;
 }
 
-.intro__input {
+.intro__form input {
   margin-bottom: 20px;
   padding: 12px 19px 10px 26px;
 
@@ -60,19 +60,19 @@
   border-radius: 4px;
 }
 
-.intro__input::placeholder {
+.intro__form input::placeholder {
   font: inherit;
   font-size: 15px;
   line-height: 24px;
   color: $placeholder;
 }
 
-.intro__label {
+.intro__form label {
   font-size: 0;
   line-height: 0;
 }
 
-.intro__submit-button {
+.intro__form button[type="submit"] {
   padding: 15px;
 
   font: inherit;
@@ -112,13 +112,13 @@
     }
   }
 
-  .intro__column:nth-child(2) {
+  .intro__form {
     padding-top: 70px;
     padding-right: $mobile-padding;
     padding-left: $mobile-padding;
   }
 
-  .intro__form-title {
+  .intro__form h3 {
     margin-bottom: 20px;
   }
 }
@@ -152,7 +152,7 @@
     }
   }
 
-  .intro__column:nth-child(2) {
+  .intro__form {
     width: 321px;
     padding-top: 70px;
   }
@@ -161,7 +161,7 @@
     max-width: 435px;
   }
 
-  .intro__form-title {
+  .intro__form h3 {
     margin-bottom: 30px;
   }
 }
@@ -183,7 +183,7 @@
     padding-top: 47px;
   }
 
-  .intro__column:nth-child(2) {
+  .intro__form {
     width: 327px;
   }
 
@@ -199,13 +199,13 @@
     text-align: left;
   }
 
-  .intro__form-title {
+  .intro__form h3 {
     margin-bottom: 20px;
     font-size: 17px;
     color: white;
   }
 
-  .intro__input {
+  .intro__form input {
     &:hover,
     &:focus {
       border-color: black;
@@ -216,7 +216,7 @@
     }
   }
 
-  .intro__submit-button {
+  .intro__form button[type="submit"] {
     &:hover,
     &:focus {
       background-color: rgba($birusa, 0.9);

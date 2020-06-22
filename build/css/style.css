@@ -327,7 +327,7 @@ input[type="radio"].visually-hidden {
   letter-spacing: -0.005em;
   color: rgba(255, 255, 255, 0.8); }
 
-.intro__form {
+.intro__form form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -338,7 +338,7 @@ input[type="radio"].visually-hidden {
       -ms-flex-direction: column;
           flex-direction: column; }
 
-.intro__form-title {
+.intro__form h3 {
   margin: 0;
   font-weight: 600;
   font-size: 18px;
@@ -347,7 +347,7 @@ input[type="radio"].visually-hidden {
   letter-spacing: -0.005em;
   color: black; }
 
-.intro__input {
+.intro__form input {
   margin-bottom: 20px;
   padding: 12px 19px 10px 26px;
   font: inherit;
@@ -357,41 +357,41 @@ input[type="radio"].visually-hidden {
   border: 1px solid #c9ccd4;
   border-radius: 4px; }
 
-.intro__input::-webkit-input-placeholder {
+.intro__form input::-webkit-input-placeholder {
   font: inherit;
   font-size: 15px;
   line-height: 24px;
   color: rgba(28, 28, 28, 0.5); }
 
-.intro__input::-moz-placeholder {
+.intro__form input::-moz-placeholder {
   font: inherit;
   font-size: 15px;
   line-height: 24px;
   color: rgba(28, 28, 28, 0.5); }
 
-.intro__input:-ms-input-placeholder {
+.intro__form input:-ms-input-placeholder {
   font: inherit;
   font-size: 15px;
   line-height: 24px;
   color: rgba(28, 28, 28, 0.5); }
 
-.intro__input::-ms-input-placeholder {
+.intro__form input::-ms-input-placeholder {
   font: inherit;
   font-size: 15px;
   line-height: 24px;
   color: rgba(28, 28, 28, 0.5); }
 
-.intro__input::placeholder {
+.intro__form input::placeholder {
   font: inherit;
   font-size: 15px;
   line-height: 24px;
   color: rgba(28, 28, 28, 0.5); }
 
-.intro__label {
+.intro__form label {
   font-size: 0;
   line-height: 0; }
 
-.intro__submit-button {
+.intro__form button[type="submit"] {
   padding: 15px;
   font: inherit;
   font-weight: 600;
@@ -427,11 +427,11 @@ input[type="radio"].visually-hidden {
       background-image: url("../img/head-background-mobile@2x.jpg"); } }
 
 @media (max-width: 767px) {
-  .intro__column:nth-child(2) {
+  .intro__form {
     padding-top: 70px;
     padding-right: 5%;
     padding-left: 5%; }
-  .intro__form-title {
+  .intro__form h3 {
     margin-bottom: 20px; } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -464,12 +464,12 @@ input[type="radio"].visually-hidden {
       background-image: url("../img/head-background-tablet@2x.jpg"); } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .intro__column:nth-child(2) {
+  .intro__form {
     width: 321px;
     padding-top: 70px; }
   .intro__description {
     max-width: 435px; }
-  .intro__form-title {
+  .intro__form h3 {
     margin-bottom: 30px; } }
 
 @media (min-width: 1024px) {
@@ -483,7 +483,7 @@ input[type="radio"].visually-hidden {
     width: 393px;
     margin-right: auto;
     padding-top: 47px; }
-  .intro__column:nth-child(2) {
+  .intro__form {
     width: 327px; }
   .intro__title {
     margin-bottom: 24px;
@@ -492,25 +492,25 @@ input[type="radio"].visually-hidden {
     text-align: left; }
   .intro__description {
     text-align: left; }
-  .intro__form-title {
+  .intro__form h3 {
     margin-bottom: 20px;
     font-size: 17px;
     color: white; }
-  .intro__input:hover, .intro__input:focus {
+  .intro__form input:hover, .intro__form input:focus {
     border-color: black; }
-    .intro__input:hover::-webkit-input-placeholder, .intro__input:focus::-webkit-input-placeholder {
+    .intro__form input:hover::-webkit-input-placeholder, .intro__form input:focus::-webkit-input-placeholder {
       color: black; }
-    .intro__input:hover::-moz-placeholder, .intro__input:focus::-moz-placeholder {
+    .intro__form input:hover::-moz-placeholder, .intro__form input:focus::-moz-placeholder {
       color: black; }
-    .intro__input:hover:-ms-input-placeholder, .intro__input:focus:-ms-input-placeholder {
+    .intro__form input:hover:-ms-input-placeholder, .intro__form input:focus:-ms-input-placeholder {
       color: black; }
-    .intro__input:hover::-ms-input-placeholder, .intro__input:focus::-ms-input-placeholder {
+    .intro__form input:hover::-ms-input-placeholder, .intro__form input:focus::-ms-input-placeholder {
       color: black; }
-    .intro__input:hover::placeholder, .intro__input:focus::placeholder {
+    .intro__form input:hover::placeholder, .intro__form input:focus::placeholder {
       color: black; }
-  .intro__submit-button {
+  .intro__form button[type="submit"] {
     cursor: pointer; }
-    .intro__submit-button:hover, .intro__submit-button:focus {
+    .intro__form button[type="submit"]:hover, .intro__form button[type="submit"]:focus {
       background-color: rgba(10, 217, 198, 0.9); } }
 
 .facts__list {
