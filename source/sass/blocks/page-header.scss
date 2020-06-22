@@ -53,8 +53,9 @@
   .page-header .wrapper {
     position: relative;
 
-    padding-right: calc(9% + 149px);
-    padding-left: calc(9% + 149px);
+    width: 60%;
+    padding-right: 0;
+    padding-left: 0;
 
     box-sizing: border-box;
   }
@@ -62,7 +63,7 @@
   .page-header__logo {
     position: absolute;
     top: 318px;
-    left: calc(9% + 149px);
+    left: 0;
   }
 
   .page-header__nav {
