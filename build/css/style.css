@@ -507,16 +507,19 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 1024px) {
   .intro {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     padding-bottom: 120px; }
   .intro__column {
     -ms-flex-item-align: start;
         align-self: flex-start;
-    width: 393px;
+    max-width: 393px;
     margin-right: auto;
     padding-top: 47px;
     padding-bottom: 120px; }
   .intro__form {
-    max-width: 327px; }
+    max-width: 327px;
+    margin-left: 20px; }
   .intro__title {
     margin-bottom: 24px;
     font-size: 46px;

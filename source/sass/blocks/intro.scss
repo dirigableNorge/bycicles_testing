@@ -168,13 +168,13 @@
 
 @media (min-width: $desktop-width) {
   .intro {
+    flex-wrap: nowrap;
     padding-bottom: 120px;
   }
 
   .intro__column {
     align-self: flex-start;
-
-    width: 393px;
+    max-width: 393px;
     margin-right: auto;
     padding-top: 47px;
     padding-bottom: 120px;
@@ -182,6 +182,7 @@
 
   .intro__form {
     max-width: 327px;
+    margin-left: 20px;
   }
 
   .intro__title {
