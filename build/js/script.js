@@ -18,3 +18,13 @@ if (headerToggle) {
     }
   });
 }
+
+var anchors = document.querySelectorAll('a[href*="#"]');
+
+anchors.forEach(function (anchor) {
+  anchor.addEventListener('click', function(event) {
+    event.preventDefault();
+    var blockID = anchor.getAttribute('href');
+    document.querySelector(blockID).scrollIntoView({behavior: "smooth", block: "start"});
+  });
+});
