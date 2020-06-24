@@ -514,7 +514,7 @@ input[type="radio"].visually-hidden {
     padding-top: 47px;
     padding-bottom: 120px; }
   .intro__form {
-    width: 327px; }
+    max-width: 327px; }
   .intro__title {
     margin-bottom: 24px;
     font-size: 46px;
@@ -1045,7 +1045,7 @@ input[type="radio"].visually-hidden {
   .page-footer .wrapper {
     padding: 0;
     padding-top: 70px;
-    padding-bottom: 54 px; }
+    padding-bottom: 54px; }
   .page-footer__title {
     margin: 0;
     margin-bottom: 20px;
