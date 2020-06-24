@@ -19,7 +19,7 @@ if (headerToggle) {
   });
 }
 
-var smoothScroll = new SmoothScroll('a[href*="#"]');
+var smoothScroll = new SmoothScroll('a[href^="#"]');
 
 var phoneInput = document.getElementById('subscribePhone');
 
