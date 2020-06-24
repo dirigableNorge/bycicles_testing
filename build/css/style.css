@@ -513,12 +513,12 @@ input[type="radio"].visually-hidden {
   .intro__column {
     -ms-flex-item-align: start;
         align-self: flex-start;
-    max-width: 393px;
+    width: 393px;
     margin-right: auto;
     padding-top: 47px;
     padding-bottom: 120px; }
   .intro__form {
-    max-width: 327px;
+    width: 327px;
     margin-left: 20px; }
   .intro__title {
     margin-bottom: 24px;

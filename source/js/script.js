@@ -1,5 +1,4 @@
 'use strict';
-
 var pageHeader = document.querySelector('.nav');
 var headerToggle = document.querySelector('.nav__toggle-button');
 
@@ -20,15 +19,7 @@ if (headerToggle) {
   });
 }
 
-var anchors = document.querySelectorAll('a[href*="#"]');
-
-anchors.forEach(function (anchor) {
-  anchor.addEventListener('click', function (event) {
-    event.preventDefault();
-    var blockID = anchor.getAttribute('href');
-    document.querySelector(blockID).scrollIntoView({behavior: 'smooth', block: 'start'});
-  });
-});
+var smoothScroll = new SmoothScroll('a[href*="#"]');
 
 var phoneInput = document.getElementById('subscribePhone');
 
