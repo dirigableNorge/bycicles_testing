@@ -1,4 +1,5 @@
 'use strict';
+
 var pageHeader = document.querySelector('.nav');
 var headerToggle = document.querySelector('.nav__toggle-button');
 
@@ -22,9 +23,16 @@ if (headerToggle) {
 var anchors = document.querySelectorAll('a[href*="#"]');
 
 anchors.forEach(function (anchor) {
-  anchor.addEventListener('click', function(event) {
+  anchor.addEventListener('click', function (event) {
     event.preventDefault();
     var blockID = anchor.getAttribute('href');
-    document.querySelector(blockID).scrollIntoView({behavior: "smooth", block: "start"});
+    document.querySelector(blockID).scrollIntoView({behavior: 'smooth', block: 'start'});
   });
 });
+
+var phoneInput = document.getElementById('subscribePhone');
+
+if (phoneInput) {
+  var phoneMask = IMask(phoneInput, {mask: '0000000000'});
+}
+

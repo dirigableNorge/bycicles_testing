@@ -15,6 +15,8 @@ var svgstore = require("gulp-svgstore")
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var npmDist = require("gulp-npm-dist");
+var concat = require('gulp-concat');
 
 
 gulp.task("css", function () {
@@ -51,6 +53,7 @@ gulp.task("server", function () {
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css", "css-min"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
+  gulp.watch("source/js/*.js", gulp.series("copy"));
 });
 
 gulp.task("refresh", function (done) {
@@ -103,9 +106,25 @@ gulp.task("copy", function () {
   .pipe(gulp.dest("build"));
 });
 
+// Copy dependencies to ./public/libs/
+gulp.task("copyLibs", function() {
+  return gulp.src(npmDist(), {base:"./node_modules"})
+  .pipe(gulp.dest("source/vendor"));
+});
+
+gulp.task("concatLibs", function() {
+  return gulp.src("source/vendor/**/*.js")
+  .pipe(concat("vendor.js"))
+  .pipe(gulp.dest("build/js/"));
+});
+
+gulp.task("vendorClean", function() {
+  return del("source/vendor");
+})
+
 gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "css-min", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "copyLibs", "concatLibs", "vendorClean", "css", "css-min", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));

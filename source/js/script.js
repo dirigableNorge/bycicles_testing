@@ -1,4 +1,5 @@
 'use strict';
+
 var pageHeader = document.querySelector('.nav');
 var headerToggle = document.querySelector('.nav__toggle-button');
 
@@ -28,3 +29,10 @@ anchors.forEach(function (anchor) {
     document.querySelector(blockID).scrollIntoView({behavior: 'smooth', block: 'start'});
   });
 });
+
+var phoneInput = document.getElementById('subscribePhone');
+
+if (phoneInput) {
+  var phoneMask = IMask(phoneInput, {mask: '0000000000'});
+}
+
